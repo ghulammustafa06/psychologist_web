@@ -32,6 +32,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ------------- Navbar Section End ----------------- */
-
-
-// ---------------- Add interactivity for hamburger menu ----------------- 
