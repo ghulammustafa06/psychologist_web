@@ -29,6 +29,49 @@ document.addEventListener('DOMContentLoaded', () => {
             servicesDropdown.classList.toggle('active');
         }
     });
-});
 
-/* ------------- Navbar Section End ----------------- */
+    const carousel = document.querySelector('.testimonial-carousel');
+    const cards = document.querySelectorAll('.testimonial-card');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    let currentIndex = 0;
+
+    function showCard(index) {
+        carousel.scrollTo({
+            left: cards[index].offsetLeft,
+            behavior: 'smooth'
+        });
+    }
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        showCard(currentIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % cards.length;
+        showCard(currentIndex);
+    });
+
+    
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carousel.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    carousel.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX) {
+            nextBtn.click();
+        }
+        if (touchEndX > touchStartX) {
+            prevBtn.click();
+        }
+    }
+});
