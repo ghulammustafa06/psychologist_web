@@ -244,7 +244,6 @@ body {
     color: #fff;
     padding: 12px 24px;
     text-decoration: none;
-    border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
@@ -280,7 +279,6 @@ body {
     border-radius: 2px;
 }
 
-/* Welcome Section */
 .welcome {
     padding: 6rem 0;
     background: linear-gradient(135deg, #f6f9fc, var(--secondary-color));
@@ -311,3 +309,87 @@ body {
     font-size: 1.1rem;
     margin-bottom: 2rem;
 }
+
+.btn-learn-more {
+    display: inline-block;
+    background-color: var(--accent-color-1);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background-color: var(--accent-color-3);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.services {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.service-item {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background-color: #f0f8ff;
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: var(--accent-color-2);
+    margin-bottom: 1rem;
+}
+
+.service-item h3 {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.icon-service {
+    width: 31px; 
+    height: 31px; 
+    vertical-align: middle;
+}
+
+.btn-service {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1.2rem; 
+}
+
