@@ -388,7 +388,6 @@ body {
     padding: 8px 16px;
     border-radius: 20px;
     text-decoration: none;
-    font-weight: 600;
     transition: all 0.3s ease;
     font-size: 1.2rem; 
 }
@@ -400,7 +399,6 @@ body {
     color: #fff;
     padding: 12px 24px;
     text-decoration: none;
-    border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
@@ -419,7 +417,7 @@ body {
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 3rem;
     color: var(--primary-color);
@@ -520,13 +518,13 @@ body {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 1.75rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
 }
 
 .service-item p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
     color: var(--text-color);
 }
@@ -545,7 +543,94 @@ body {
     padding: 8px 16px;
     border-radius: 20px;
     text-decoration: none;
-    font-weight: 600;
     transition: all 0.3s ease;
     font-size: 1.2rem; 
+}
+
+@keyframes btn-service-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-service {
+    animation: btn-service-animation 2s infinite;
+}
+
+.btn-service img {
+    margin-left: 15px; 
+    font-size: 1.2rem; 
+}
+
+
+
+@media (max-width: 768px) {
+    .welcome-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .welcome-image {
+        max-width: 100%;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.testimonials {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f6f9fc, var(--secondary-color));
+}
+
+.testimonials h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.testimonials h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, var(--accent-color-1), var(--accent-color-4));
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+.testimonial-carousel {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    padding: 2rem;
+}
+
+.card-content {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 60px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
