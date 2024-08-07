@@ -525,3 +525,27 @@ body {
     color: var(--primary-color);
 }
 
+.service-item p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.icon-service {
+    width: 31px; 
+    height: 31px; 
+    vertical-align: middle;
+}
+
+.btn-service {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1.2rem; 
+}
