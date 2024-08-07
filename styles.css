@@ -731,3 +731,89 @@ body {
         padding: 2rem;
     }
 }
+
+
+/* General Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-section-about {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer-section-about .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff; /* Warda color white */
+}
+
+.footer-section-about p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section-about .contact span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-section-about .contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section-about .contact span:nth-child(2) {
+    margin-top: 20px; /* Add margin-top to the email text */
+}
+
+.footer-section-links {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+    text-align: center; /* Center align the links section */
+}
+
+.footer-section-links h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section-links ul li a:hover {
+    text-decoration: underline;
+}
