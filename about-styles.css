@@ -222,7 +222,6 @@
     line-height: 1.4;
     color: var(--text-color);
     font-family: 'Lato', sans-serif;
-    opacity: 0;
     transition: opacity 0.3s ease;
     position: absolute;
     top: 50%;
@@ -267,7 +266,6 @@
 }
 
 .timeline-container::after {
-    content: '\2190'; 
     position: absolute;
     bottom: -40px;
     left: 50%;
@@ -299,3 +297,37 @@
         width: 200px;
         height: 200px;
     }
+
+    .timeline-icon {
+        font-size: 2.5rem;
+    }
+
+    .timeline-year {
+        font-size: 2rem;
+    }
+
+    .timeline-text h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-text p {
+        font-size: 0.8rem;
+    }
+
+    .about-hero h1 {
+        font-size: 3rem;
+    }
+
+    .about-hero p {
+        font-size: 1.2rem;
+    }
+
+    .bio-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio-image {
+        margin-bottom: 2rem;
+    }
+}
