@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warda - Services</title>
+    <link rel="stylesheet" href="services-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.svg" alt="Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="services-dropdown">
+                    <a href="#services" class="nav-link">Services <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#individual">Individual Therapy</a></li>
+                        <li><a href="#couples">Couples Therapy</a></li>
+                        <li><a href="#group">Group Therapy</a></li>
+                    </ul>
+                </li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-hero">
+            <div class="container">
+                <h1 class="top-tittle">My Services</h1>
+                <p>Discover the path to mental wellness with our comprehensive range of psychological services.</p>
+            </div>
+        </section>
+
+        <section class="services-overview">
+            <div class="container">
+                <h2 class="heading">What I Offer</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-user service-icon"></i>
+                        <h3>Individual Therapy</h3>
+                        <p>Personalized one-on-one sessions tailored to your unique needs and goals.</p>
+                        <a href="#individual" class="btn-service">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-users service-icon"></i>
+                        <h3>Couples Therapy</h3>
+                        <p>Strengthen your relationship and improve communication with expert guidance.</p>
+                        <a href="#couples" class="btn-service">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-brain service-icon"></i>
+                        <h3>Cognitive Behavioral Therapy</h3>
+                        <p>Transform negative thought patterns and behaviors with proven techniques.</p>
+                        <a href="#cbt" class="btn-service">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-heart service-icon"></i>
+                        <h3>Stress Management</h3>
+                        <p>Learn effective coping strategies to manage stress and improve well-being.</p>
+                        <a href="#stress" class="btn-service">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="servics-script.js"></script>
+</body>
+</html>
