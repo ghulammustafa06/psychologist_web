@@ -74,6 +74,8 @@
     transition: transform 0.3s ease-out;
 }
 
+
+
 .nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -97,6 +99,7 @@
 .dropdown-menu a {
     color: var(--text-color);
     padding: 12px 16px;
+    text-decoration: none;
     display: block;
     transition: all 0.3s ease;
 }
@@ -112,6 +115,7 @@
 .heading {
     font-family: "Edu AU VIC WA NT Hand", cursive;
     font-optical-sizing: auto;
+    font-style: normal;
     font-size: 2rem; 
     font-weight: 700; 
     color: #333; 
@@ -120,12 +124,15 @@
     line-height: 1.2; 
 }
 
+
 .services-hero h1 {
     font-size: 3.5rem;
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
+
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     animation: fadeInDown 1s ease-out;
 }
 
@@ -147,6 +154,7 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* Services Overview */
 .services-overview {
     padding: 80px 0;
     background-color: #f8f9fa;
@@ -155,6 +163,7 @@
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
     margin-top: 3rem;
 }
 
@@ -164,6 +173,7 @@
     padding: 2.5rem;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
@@ -173,7 +183,76 @@
     position: absolute;
     top: -50%;
     left: -50%;
+    width: 200%;
     height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
     transform: rotate(45deg);
     transition: all 0.5s ease;
 }
+
+.service-card:hover::before {
+    left: 100%;
+    top: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    font-size: 3.5rem;
+    color: #2575fc;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1);
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.btn-service {
+    display: inline-block;
+    padding: 10px 25px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-service:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
+    transform: translateY(-2px);
+}
+
+.service-details {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.service-detail {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.service-detail:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
