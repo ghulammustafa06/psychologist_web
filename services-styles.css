@@ -207,12 +207,13 @@
     transition: all 0.3s ease;
 }
 
-.service-card:hover .service-icon {
-    transform: scale(1.2);
+service-card:hover .service-icon {
+    transform: scale(1.1);
 }
 
 .service-card h3 {
     font-size: 1.8rem;
+    margin-bottom: 1rem;
     color: #333;
 }
 
@@ -229,7 +230,9 @@
     color: #fff;
     border-radius: 30px;
     text-decoration: none;
-    font-weight: 650;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
     cursor: pointer;
 }
 
@@ -247,6 +250,7 @@
 .service-detail {
     margin-bottom: 4rem;
     padding: 2rem;
+    border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
 }
@@ -254,7 +258,6 @@
 .service-detail:hover {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
-
 
 .service-detail h3 {
     font-size: 2.2rem;
@@ -279,6 +282,7 @@
 .service-detail ul li {
     position: relative;
     padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
     font-size: 1.1rem;
     color: #555;
 }
@@ -286,6 +290,54 @@
 .service-detail ul li::before {
     content: '→';
     color: #2575fc;
+    position: absolute;
     left: 0;
     top: 0;
+}
+
+/* -------------------------  */
+
+/* FAQ Section */
+.faq {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f6f9fc 0%, #e9ecef 100%);
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.faq-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #2575fc;
+    transition: all 0.3s ease;
 }
